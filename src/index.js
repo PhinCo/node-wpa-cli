@@ -239,9 +239,7 @@ WpaCLI.prototype.enableNetwork = function (netId, cb) {
 };
 
 WpaCLI.prototype.save = function( cb ){
-    this.request('SAVE', function(){
-		cb.call(this, null);
-	})
+    this.request('SAVE_CONFIG', cb );
 };
 
 module.exports = WpaCLI;

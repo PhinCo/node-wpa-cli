@@ -1,0 +1,34 @@
+{
+  "name": "node-wpa-cli",
+  "version": "0.0.0",
+  "target": {
+    "ipAddress": "192.168.7.10",
+    "user": "pi"
+  },
+  "paths": {
+    "dist": "dist",
+    "docs": "docs",
+    "src": "src",
+    "readme": "README.md"
+  },
+  "build": {
+    "excludeFilePatterns": [
+      "**/.DS_Store",
+      "**/.idea",
+      "tests/**"
+    ],
+    "executableSources": "wpa_cli.js",
+    "postInstallCommands": [
+      "npm install"
+    ]
+  },
+  "sync": {
+    "excludeFilePatterns": [
+      "node_modules"
+    ]
+  },
+  "remoteCommands": {
+    "install": "npm install",
+    "rebuild": "npm rebuild"
+  }
+}
