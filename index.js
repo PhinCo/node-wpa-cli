@@ -219,11 +219,15 @@ WpaCLI.prototype.addNetwork = function (params, cb) {
 };
 
 WpaCLI.prototype.removeAllNetworks = function (cb) {
-	this.request('REMOVE_NETWORK ' + 'ALL', cb);
+	this.request('REMOVE_NETWORK ' + 'all', cb);
 };
 
 WpaCLI.prototype.removeNetwork = function (netId, cb) {
     this.request('REMOVE_NETWORK ' + netId, cb);
+};
+
+WpaCLI.prototype.disableAllNetworks = function (netId, cb) {
+	this.request('DISABLE_NETWORK ' + 'all', cb);
 };
 
 WpaCLI.prototype.disableNetwork = function (netId, cb) {
