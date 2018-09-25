@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PhinCo/node_wpa_cli.git"
+    "url": "https://github.com/PhinCo/node-wpa-cli.git"
   },
-  "homepage": "https://github.com/PhinCo/node_wpa_cli.git",
+  "homepage": "https://github.com/PhinCo/node-wpa-cli.git",
   "keywords": [
     "network",
     "wpa_supplicant",
@@ -24,6 +24,6 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PhinCo/node_wpa_cli.git/issues"
+    "url": "https://github.com/PhinCo/node-wpa-cli.git/issues"
   }
 }
