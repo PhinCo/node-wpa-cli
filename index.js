@@ -234,6 +234,10 @@ WpaCLI.prototype.enableNetwork = function (netId, cb) {
     this.request('ENABLE_NETWORK ' + netId, cb);
 };
 
+WpaCLI.prototype.saveConfig = function( cb ){
+    this.request('SAVE CONFIG', cb )
+};
+
 module.exports = WpaCLI;
 
 /* http://w1.fi/wpa_supplicant/devel/ctrl_iface_page.html
