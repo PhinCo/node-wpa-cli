@@ -203,7 +203,9 @@ WpaCLI.prototype.addNetwork = function (params, cb) {
             if (done) {
                 break;
             } else if (params.hasOwnProperty(key)) {
-                this.request('SET_NETWORK ' + network_id + ' ' + key + ' "' + params[key] + '"', function (status) {
+            	const request = 'SET_NETWORK ' + network_id + ' ' + key + ' ' + params[key];
+            	console.log( "REQUEST: ", request );
+                this.request( request, function (status) {
                     if (status != 'OK') {
                         if (typeof cb === 'function')
                             cb.call(this, 'Param error');
