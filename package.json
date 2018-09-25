@@ -1,5 +1,5 @@
 {
-  "name": "node_wpa_cli",
+  "name": "@connectedyard/node_wpa_cli",
   "version": "1.3.0",
   "description": "Control wpa_supplicant using Node.JS",
   "main": "index.js",
@@ -10,18 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/afilini/node_wpa_cli"
+    "url": "https://github.com/PhinCo/node_wpa_cli.git"
   },
-  "homepage": "https://github.com/afilini/node_wpa_cli",
+  "homepage": "https://github.com/PhinCo/node_wpa_cli.git",
   "keywords": [
     "network",
     "wpa_supplicant",
     "wpa_cli",
     "wifi"
   ],
-  "author": "Alekos Filini (@afilini)",
+  "authors": [
+    "Alekos Filini (@afilini)",
+    "Scott Eklund"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/afilini/node_wpa_cli/issues"
+    "url": "https://github.com/PhinCo/node_wpa_cli.git/issues"
   }
 }

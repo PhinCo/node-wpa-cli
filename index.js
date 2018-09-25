@@ -218,12 +218,16 @@ WpaCLI.prototype.addNetwork = function (params, cb) {
     });
 };
 
+WpaCLI.prototype.removeAllNetworks = function (cb) {
+	this.request('REMOVE_NETWORK ' + 'ALL', cb);
+};
+
 WpaCLI.prototype.removeNetwork = function (netId, cb) {
-    this.request('REMOVE_NETOWRK ' + netId, cb);
+    this.request('REMOVE_NETWORK ' + netId, cb);
 };
 
 WpaCLI.prototype.disableNetwork = function (netId, cb) {
-    this.request('DISABLE_NETOWRK ' + netId, cb);
+    this.request('DISABLE_NETWORK ' + netId, cb);
 };
 
 WpaCLI.prototype.enableNetwork = function (netId, cb) {
