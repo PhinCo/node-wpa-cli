@@ -1,8 +1,8 @@
 {
   "name": "@connectedyard/node-wpa-cli",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Control wpa_supplicant using Node.JS",
-  "main": "index.js",
+  "main": "./index.js",
   "bin": "./wpa_cli.js",
   "dependencies": {
     "unix-dgram": "^0.2.1"
